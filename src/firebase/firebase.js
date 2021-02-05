@@ -1,4 +1,3 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: 'AIzaSyDGyDJmNwxk94iBICz28IgwOohCSQyePlo',
   authDomain: 'netflix-4331b.firebaseapp.com',
