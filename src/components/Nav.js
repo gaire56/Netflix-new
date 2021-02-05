@@ -23,6 +23,7 @@ function Nav() {
     <div className={`nav ${show && 'nav__black'}`}>
       <div className="nav__contents">
         <img
+          onClick={() => history.push('/')}
           className="nav__logo"
           src="https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png"
           alt=""
