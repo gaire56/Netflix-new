@@ -2,13 +2,14 @@ import React, { useRef } from 'react';
 import './SignUpScreen.css';
 
 function SignUpScreen() {
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+
   const register = (e) => {
     e.preventDefault();
   };
 
   const signIn = (e) => {
-    const emailRef = useRef();
-
     e.preventDefault();
   };
 
