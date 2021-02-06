@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PlanScreen.css';
 
 function PlansScreen() {
-  return (
-    <div className="planScreen">
-      <hi> from planScreen</hi>
-    </div>
-  );
+  const [products, setProducts] = useState();
+
+  return <div className="planScreen"></div>;
 }
 
 export default PlansScreen;
