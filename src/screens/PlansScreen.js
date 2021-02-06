@@ -26,6 +26,8 @@ function PlansScreen() {
   }, []);
   console.log(products);
 
+  const loadCheckOut = async (priceId) => {};
+
   return (
     <div className="planScreen">
       {Object.entries(products).map(([productId, productData]) => {
@@ -36,7 +38,9 @@ function PlansScreen() {
               <h5>{productData.name}</h5>
               <h6>{productData.description}</h6>
             </div>
-            <button>Subscribe</button>
+            <button onClick={loadCheckOut(productData.prices.priceId)}>
+              Subscribe
+            </button>
           </div>
         );
       })}
