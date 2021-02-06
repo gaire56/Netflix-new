@@ -26,7 +26,22 @@ function PlansScreen() {
   }, []);
   console.log(products);
 
-  return <div className="planScreen"></div>;
+  return (
+    <div className="planScreen">
+      {Object.entries(products).map(([productId, productData]) => {
+        // add some logic if the user's subscription is active...
+        return (
+          <div className="PlansScreen__plan">
+            <div className="planScreen__info">
+              <h5>{productData.name}</h5>
+              <h6>{productData.description}</h6>
+            </div>
+            <button>Subscribe</button>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default PlansScreen;
